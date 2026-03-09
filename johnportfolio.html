@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="p.css">
+</head>
+
+<body>
+    <header>
+        <section class="header_section">
+
+            <div class="logo">
+                <img src="images/image.png" alt="">
+
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="humbergermenu" id="humbergermenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </section>
+        <div class="menubtn" id="menubtn">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+    </header>
+
+
+    <section class="home_section" id="home">
+        <div class="image">
+            <img src="images/ehe.png" alt="">
+        </div>
+        <div class="imgdescription">
+            <h1>john </h1>
+            <h3>the web developer</h3>
+            <p>Welcome to my portfolio! I build high-performance, responsive websites that turn complex ideas into
+                digital experiences.
+            </p>
+        </div>
+    </section>
+    <section class="about_section" id="about">
+        <h2>About</h2>
+        <div class="aboutcontainer">
+            <p>
+                I am a Full-Stack Web Developer with a passion for turning complex problems into
+                simple, beautiful, and intuitive designs. My goal is to build websites that are
+                not only visually stunning but also fast and accessible.
+            </p>
+            <p>
+                When I'm not coding, you'll find me exploring new tech trends,hiking or
+                contributing to open-source projects. I believe in continuous learning
+                and the power of a well-placed semi-colon.
+            </p>
+        </div>
+    </section>
+    <section class="skills_section" id="skills">
+        <h2>my skills</h2>
+        <div class="skill_description">
+            <div class="skill">
+                <h3>web browsing</h3>
+                <p>Proficient in navigating and optimizing web applications for performance
+                    and user experience.</p>
+                <p>use</p>
+                <strong>html</strong><br>
+                <strong>css</strong><br>
+                <strong>javascript</strong><br>
+
+            </div>
+            <div class="skill">
+                <h3>backend for interacting</h3>
+                <p>Experienced in developing and maintaining backend systems for seamless frontend integration.</p>
+                <strong>java</strong><br>
+                <strong>sql</strong> for storange <br>
+
+            </div>
+            <div class="skill">
+                <h3>graphic design</h3>
+                <p>Skilled in creating visually appealing designs for web and print media.</p>
+                <strong>adobe photoshop</strong><br>
+                <strong>ux/ui design</strong><br>
+
+            </div>
+        </div>
+    </section>
+    <section class="contact_section" id="contact">
+        <h2>contact me</h2>
+        <div class="contactdescription">
+            <p> 1'm always free to discuss important project,new ideas,solving problems that can improve your goal.
+            </p>
+            <p>reach me on </p>
+            <div class="media">
+                <p>gmail: <a href="mailto:johnnyk3922@example.com">johnnyk3922@gmail.com</a></p>
+                <p>📞<a href="tel:+254796294893">+254796294893</a></p>
+            </div>
+            <div class="socialmedialplatform">
+                <a href="https://www.facebook.com/Kim John's"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/john_k_dev/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=" https://wa.me/254796294893"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@John k dev "><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/John Njuguna/"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footerpart">
+            <h1>john</h1>
+            <p>the web developer</p>
+        </div>
+        <div class="footerpart">
+            <p>let's connect on social media</p>
+            <div class="socialmediaicons">
+                <a href="https://www.facebook.com/Kim John's"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/john_k_dev/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=" https://wa.me/254796294893"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@John k dev "><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/John Njuguna"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="footerpart">
+            <p>&copy; 2026 John kim's. All rights reserved.</p>
+        </div>
+
+    </footer>
+    <script>
+
+        const humbergermenu = document.getElementById('humbergermenu');
+        const menubtn = document.getElementById('menubtn');
+        const menuLinks = document.querySelectorAll('.menubtn li a');
+
+        humbergermenu.addEventListener('click', () => {
+            humbergermenu.classList.toggle('change');
+            menubtn.classList.toggle('open');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                humbergermenu.classList.remove('change');
+                menubtn.classList.remove('open');
+            });
+        });
+
+
+    </script>
+
+
+
+</body>
+
+</html>
